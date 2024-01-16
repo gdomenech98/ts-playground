@@ -1,0 +1,1 @@
+export const AAA = "Hello from library"

@@ -6,18 +6,9 @@
 !.yarn/sdks
 !.yarn/versions
 
-# expo
-**/.expo/*
-
-# next.js
-**/.next/*
-/out/
-
-# tamagui
-**/.tamagui/*
-
 # production
 /build
+dist
 
 # debug
 npm-debug.log*

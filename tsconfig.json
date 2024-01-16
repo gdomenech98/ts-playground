@@ -2,14 +2,28 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
+    "target": "es2020",
+    "types": [
+      "node"
+    ],
+    "strict": false,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
     "paths": {
-      "app/*": ["./packages/app/*"],
-      "@my/ui/*": ["./packages/ui/*"],
-      "sixedge/*": [
-        "./packages/sixedge/*"
-      ],
+      "@/*": [
+        "./src/*"
+      ]
     }
   },
-  "extends": "expo/tsconfig.base",
-  "exclude": ["**/node_modules", "**/dist", "**/types", "apps/next/out", "apps/next/.next", "apps/next/.tamagui"]
+  "include": [
+    "./src/**/*.ts",
+    "index.ts"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/dist",
+    "**/types"
+  ]
 }
